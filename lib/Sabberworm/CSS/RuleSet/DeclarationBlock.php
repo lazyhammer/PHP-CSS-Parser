@@ -195,13 +195,7 @@ class DeclarationBlock extends RuleSet {
 			return;
 		$oRule = $aRules['font'];
 		// reset properties to 'normal' per http://www.w3.org/TR/21/fonts.html#font-shorthand
-		$aFontProperties = array(
-			'font-style' => 'normal',
-			'font-variant' => 'normal',
-			'font-weight' => 'normal',
-			'font-size' => 'normal',
-			'line-height' => 'normal'
-		);
+		$aFontProperties = array();
 		$mRuleValue = $oRule->getValue();
 		$aValues = array();
 		if (!$mRuleValue instanceof RuleValueList) {
